@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Dekko|Sarpanch');
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background: #3498db;
+    height: auto;
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px #000;
+}
+
+header h1 {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Sarpanch', sans-serif;
+    color: aliceblue;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.box h2,
+.box h3 {
+    text-align: center;
+    font-family: 'Dekko', cursive;
+    color: aliceblue;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.trigger {
+    width: 250px;
+    height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    background: #3498db;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px auto;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.btn i {
+    padding-right: 5px;
+}

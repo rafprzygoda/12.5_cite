@@ -6,9 +6,13 @@ $(function(){
     function getQuote() {
         $.getJSON(prefix + quoteUrl, createTweet);
         $.ajaxSetup({cache: false});
-}
+    }
+    
     function createTweet(input) {
         var data = input[0];
+        if (input == null) {
+            alert('There\'s no input');
+        }
         var quoteText = $(data.content).text().trim();
         var quoteAuthor = data.title;
 

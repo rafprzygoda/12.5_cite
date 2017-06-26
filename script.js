@@ -11,10 +11,17 @@ $(function(){
     function createTweet(input) {
         var data = input[0];
         if (input == null) {
-            alert('There\'s no input');
+            data = 'none of text';
         }
+        
         var quoteText = $(data.content).text().trim();
+        if (quoteText  == null) {
+            quoteText = 'none of text';
+        }
         var quoteAuthor = data.title;
+        if (quoteAuthor == null) {
+            quoteAuthor = 'none of text';
+        }
 
         if (!quoteAuthor.length) {
             quoteAuthor = "Unknown author";
@@ -36,3 +43,12 @@ $(function(){
         getQuote();
     })
 });
+
+
+//paragraph.innerHTML = response.value.joke;
+        /*var joke = 'brak dowcipu';
+        
+        if (response.value && response.value.joke) {
+            joke = response.value.joke;
+        }
+        paragraph.innerHTML = joke;*/

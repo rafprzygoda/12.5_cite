@@ -10,7 +10,7 @@ $(function(){
     
     function createTweet(input) {
         var data = input[0];
-        if (!input.length) || if (input.length === 0) {
+        if (!input.length || input.length === 0) {
             data = 'none of text';
         }
         
@@ -18,6 +18,7 @@ $(function(){
         if (quoteText  == null) {
             quoteText = 'none of text';
         }
+        
         // It's proposition for instead above code. 
         // if (!quoteText.length) {
         //      quoteText = 'Unknown text';

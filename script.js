@@ -10,7 +10,7 @@ $(function(){
     
     function createTweet(input) {
         var data = input[0];
-        if (input == null) {
+        if (!input.length) || if (input.length === 0) {
             data = 'none of text';
         }
         
@@ -18,6 +18,11 @@ $(function(){
         if (quoteText  == null) {
             quoteText = 'none of text';
         }
+        // It's proposition for instead above code. 
+        // if (!quoteText.length) {
+        //      quoteText = 'Unknown text';
+        //  }
+        
         var quoteAuthor = data.title;
         if (quoteAuthor == null) {
             quoteAuthor = 'none of text';
@@ -43,12 +48,3 @@ $(function(){
         getQuote();
     })
 });
-
-
-//paragraph.innerHTML = response.value.joke;
-        /*var joke = 'brak dowcipu';
-        
-        if (response.value && response.value.joke) {
-            joke = response.value.joke;
-        }
-        paragraph.innerHTML = joke;*/
